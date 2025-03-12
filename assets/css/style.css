@@ -197,6 +197,14 @@ main {
     /* Override the heading color set in general styles */
     color: #fafafa;
 }
+/* Media query : large or landscape phones (576px and up)  */
+@media screen and (min-width: 576px ) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 
 /* Media query : tablets and larger (768 px and up) */
 @media screen and (min-width: 760px ) {
@@ -250,12 +258,20 @@ main {
         text-align: end;
         align-self: flex-end;
     }
+    /* Gallery */
+    #photos {
+        column-count: 3;
+    }
     
 }
 /* Large devices (laptops and desktops , 992px and above) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+    /* Gallery */
+    #photos {
+        column-count: 4;
     }
     /* Large devices (laptops and desktops , 1200px and above) */
 @media screen and (min-width: 1200px) {
@@ -279,6 +295,10 @@ main {
     }
     #benefits-physical > div {
         align-self: flex-end;
+    }
+    /* Gallery */
+    #photos {
+        column-count: ;
     }
 
 }
