@@ -197,6 +197,13 @@ main {
     /* Override the heading color set in general styles */
     color: #fafafa;
 }
+
+
+/* Sign-Up Page */
+.text-input {
+    input:required;
+}
+
 /* Media query : large or landscape phones (576px and up)  */
 @media screen and (min-width: 576px ) {
     #photos {
